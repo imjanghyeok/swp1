@@ -12,7 +12,7 @@ def application(environ, start_response):
   sum = a+b
   prod = a*b
 
- response_body = html 
+ response_body = html % {'sum': sum, 'prod': prod}
 
 
  start_response('200 OK', [
