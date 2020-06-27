@@ -9,7 +9,7 @@ def application(environ, start_response):
  sum = 0
  prod = 0
  
- if '' not in [a, b]:
+ if a.isdigit() and b.isdigit():
   a, b = int(a), int(b)
   sum = a + b
   prod = a * b
